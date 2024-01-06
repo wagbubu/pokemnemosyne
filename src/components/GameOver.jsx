@@ -8,13 +8,13 @@ export default function GameOver({ gameStatus, resetGame }) {
   function winOrLose() {
     if (gameStatus == "win") {
       return {
-        img: "src/assets/happy-pikachu.gif",
+        img: "../assets/happy-pikachu.gif",
         status: "You Won!",
         message: "Pikachu is Happy!",
       };
     } else if (gameStatus == "lose") {
       return {
-        img: "src/assets/sad-pikachu.gif",
+        img: "../assets/sad-pikachu.gif",
         status: "You Lost!",
         message: "Pikachu is sad huhu..",
       };

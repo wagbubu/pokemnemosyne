@@ -40,7 +40,7 @@ export default function Pokemon({ name, id, isClicked, isFlipped }) {
             <figure className="px-6">
               <img
                 width="100"
-                src="src/assets/back-card.jpg"
+                src="../assets/back-card.jpg"
                 alt="Shoes"
                 className="rounded-xl"
               />

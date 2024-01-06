@@ -128,7 +128,7 @@ export default function App() {
         ""
       )}
 
-      <div className="h-screen bg-[url('src/assets/pokemon-bg.gif')] bg-no-repeat bg-cover">
+      <div className="h-screen bg-[url('../assets/pokemon-bg.gif')] bg-no-repeat bg-cover">
         <div className="bg-slate-50 h-screen py-16 px-8 bg-opacity-25">
           <Header highScore={highScore} currentScore={currentScore}></Header>
           <PokemonCardList
