@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import fetchData from "../assets/fetchData";
 import PropTypes from "prop-types";
 import capitalizeFirstLetter from "../assets/capitalizeFirstLetter";
+import backCard from "../assets/backCard.jpg";
 
 export default function Pokemon({ name, id, isClicked, isFlipped }) {
   const [sprite, setSprite] = useState(null);
@@ -40,7 +41,7 @@ export default function Pokemon({ name, id, isClicked, isFlipped }) {
             <figure className="px-6">
               <img
                 width="100"
-                src="../assets/back-card.jpg"
+                src={backCard}
                 alt="Shoes"
                 className="rounded-xl"
               />

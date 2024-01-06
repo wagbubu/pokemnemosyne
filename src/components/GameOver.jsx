@@ -1,4 +1,6 @@
 import Proptypes from "prop-types";
+import happyPikachu from "../assets/happyPikachu.gif";
+import sadPikachu from "../assets/sadPikachu.gif";
 
 export default function GameOver({ gameStatus, resetGame }) {
   function handleClick() {
@@ -8,13 +10,13 @@ export default function GameOver({ gameStatus, resetGame }) {
   function winOrLose() {
     if (gameStatus == "win") {
       return {
-        img: "../assets/happy-pikachu.gif",
+        img: happyPikachu,
         status: "You Won!",
         message: "Pikachu is Happy!",
       };
     } else if (gameStatus == "lose") {
       return {
-        img: "../assets/sad-pikachu.gif",
+        img: sadPikachu,
         status: "You Lost!",
         message: "Pikachu is sad huhu..",
       };

@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import PokemonCardList from "./components/PokemonCardList";
 import fetchData from "./assets/fetchData";
 import { v4 as uuid } from "uuid";
-
+import pokemonbg from "./assets/pokemonbg.gif";
 import { useState, useEffect } from "react";
 
 export default function App() {
@@ -128,7 +128,10 @@ export default function App() {
         ""
       )}
 
-      <div className="h-screen bg-[url('../assets/pokemon-bg.gif')] bg-no-repeat bg-cover">
+      <div
+        style={{ backgroundImage: `url(${pokemonbg})` }}
+        className="h-screen bg-no-repeat bg-cover"
+      >
         <div className="bg-slate-50 h-screen py-16 px-8 bg-opacity-25">
           <Header highScore={highScore} currentScore={currentScore}></Header>
           <PokemonCardList

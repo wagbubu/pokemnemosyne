@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&display=swap");
+.app {
+  background-image: url("/src/assets/pokemonbg.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .glow {
   font-size: 80px;
   color: #fff;
