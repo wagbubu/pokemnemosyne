@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&display=swap");
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow-blue 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow-blue {
+  from {
+    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px #4dffe1, 0 0 30px #00ade6,
+      0 0 40px #005ce6, 0 0 50px #0082e6, 0 0 60px rgb(46, 130, 179),
+      0 0 70px #3600e6;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #00ade6, 0 0 40px #4dffe1,
+      0 0 50px #005ce6, 0 0 60px #4dcaff, 0 0 70px #4deaff, 0 0 80px #005ce6;
+  }
+}
+
+.glow-green {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow-gr 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow-gr {
+  from {
+    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px #d0ff4d, 0 0 30px #00ade6,
+      0 0 40px #00e617, 0 0 50px #00e67b, 0 0 60px rgb(46, 179, 110),
+      0 0 70px #c6fdcb;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #82e600, 0 0 40px #4dff62,
+      0 0 50px #49e600c6, 0 0 60px #d0ff4d, 0 0 70px #4dff94, 0 0 80px #005ce6;
+  }
+}
+
+.glow-lose {
+  transition: ease-in-out;
+  animation: gameover-glow-red 1s ease-in-out infinite alternate;
+}
+
+@keyframes gameover-glow-red {
+  from {
+    box-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px #e27347, 0 0 30px #f37949,
+      0 0 40px #e60800, 0 0 50px #d66b50d7, 0 0 60px rgb(179, 62, 46),
+      0 0 70px #fdcac6;
+  }
+
+  to {
+    box-shadow: 0 0 20px #ee2121d5, 0 0 30px #e76544, 0 0 40px #fd6906,
+      0 0 50px #e62e00c6, 0 0 60px #ff9d4d, 0 0 70px #e47269, 0 0 80px #f09a8e;
+  }
+}
+
+.glow-win {
+  transition: ease-in-out;
+  animation: gameover-glow-green 1s ease-in-out infinite alternate;
+}
+
+@keyframes gameover-glow-green {
+  from {
+    box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px #d0ff4d, 0 0 30px #00ade6,
+      0 0 40px #00e617, 0 0 50px #00e67b, 0 0 60px rgb(46, 179, 110),
+      0 0 70px #c6fdcb;
+  }
+
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #82e600, 0 0 40px #4dff62,
+      0 0 50px #49e600c6, 0 0 60px #d0ff4d, 0 0 70px #4dff94, 0 0 80px #005ce6;
+  }
+}
+
+.card-back {
+  background-color: rgba(26, 70, 124, 0.98);
+  position: absolute;
+  top: 0;
+}
+
+.whole-card {
+  position: relative;
+}
+
+.whole-card .card-back {
+  transform: rotateY(90deg);
+  position: absolute;
+  transition: all ease-in 0.2s;
+}
+.flipped .card-back {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.whole-card .card-front {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .card-front {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
